@@ -2,7 +2,8 @@ package cse360assignment02;
 // Name: Nicholas Ngo
 // repo: https://github.com/nqngo-asu/Assignment02
 // Description: This class does addition and subtraction to a 
-// total and returns it and any changes amde to it
+// total and returns it and any changes made to it
+// Access info: URL, and /CSE360/src/cse360assignment02/AddingMachine.java
 public class AddingMachine {
 	  private int total;
 	  private String history;
@@ -13,7 +14,7 @@ public class AddingMachine {
 	  */
 	  public AddingMachine () {
 	    total = 0;  // not needed - included for clarity
-	    history = "0 ";
+	    history = "0";
 	  }
 	  /**
 	  * This method returns the total after all the operations that
@@ -31,7 +32,7 @@ public class AddingMachine {
 	   */
 	  public void add (int value) {
 		  total += value; //adds value to total
-		  history = history + "+ " + value  + " "; //adds to transaction history
+		  history = history + " + " + value; //adds to transaction history
 	  }
 	  /**
 	   * This method subtracts its parameter to the total
@@ -40,7 +41,7 @@ public class AddingMachine {
 	   */
 	  public void subtract (int value) {
 		  total -= value; //adds value to total
-		  history = history + "- " + value  + " "; //subtracts transaction history
+		  history = history + " - " + value; //subtracts transaction history
 	  }
 	  
 	  /**
